@@ -1,18 +1,14 @@
 "use strict";
-// Some beginners need new useful basic skills: string boolean number null undefined biging symbol
-// Assign the correct types to each of the following variables
-// let message = "Hello, Typescript";
-// let age = 42;
-// let isStudent = true;
-// let fetched = null;
-// let user = undefined;
-// let largeNumber = 328428937979;
-// let unique = Symbol("uniqueSymbol");
+/*
+any
+do anything with the value without checking it
+It skips type checking, so it’s easy to end up with bugs.
+*/
 Object.defineProperty(exports, "__esModule", { value: true });
-let message = "Hello, Typescript";
-let age = 42;
-let isStudent = true;
-let fetched = null;
-let user = undefined;
-let largeNumber = 328428937979n;
-let unique = Symbol("uniqueSymbol");
+let firstName = "Nhan";
+firstName = 123;
+firstName = [];
+//no error if set noImplicitAny": false in tsconfig.json
+function returnParam(param) {
+    return param;
+}
