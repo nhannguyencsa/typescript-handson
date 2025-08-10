@@ -1,14 +1,15 @@
 "use strict";
 /*
-any
-do anything with the value without checking it
-It skips type checking, so it’s easy to end up with bugs.
+unknown
+- It can also hold any value, like any.
+- But to use it, you need to check its type first before doing anything with it.
 */
 Object.defineProperty(exports, "__esModule", { value: true });
-let firstName = "Nhan";
-firstName = 123;
-firstName = [];
-//no error if set noImplicitAny": false in tsconfig.json
-function returnParam(param) {
-    return param;
+function multiplyByTwo(number) {
+    if (typeof number === "number") {
+        return number * 2;
+    }
+    return "Please provide a valid number";
 }
+console.log(multiplyByTwo(3));
+console.log(multiplyByTwo("abc"));
