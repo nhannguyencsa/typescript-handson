@@ -1,18 +1,13 @@
 "use strict";
-/*
-  Declaration: when to declare a type
-  annotation; when to assign a type
-  inference: try to infer the  type of variable
-*/
 Object.defineProperty(exports, "__esModule", { value: true });
-//annotation; when to assign a type
-let firstName = "Nhan";
-let age = 99;
-let today = new Date();
-let unique = Symbol();
-function addNumbers(a, b) {
-    return a + b;
+let StringOrNumber = 1234;
+function print(input) {
+    if (input) {
+        console.log(input);
+    }
+    else {
+        console.log("Please input something to print");
+    }
 }
-//inference: try to infer the  type of variable
-//Once sure the value has that type can you inference
-let finalResult = addNumbers(10, 15);
+print();
+print("Hello World!!");
