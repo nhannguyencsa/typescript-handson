@@ -1,7 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const throwError = (errorMessage) => {
-    throw new Error(errorMessage);
+let firstName = "Nhan";
+let age = 99;
+//User from API
+let user = {
+    name: "Nhan",
+    age: 99
 };
-let string = ["a", "b"];
-let myFunc = () => 2;
+function fetchUser() {
+    return user;
+}
+const fetchedUser = fetchUser();
