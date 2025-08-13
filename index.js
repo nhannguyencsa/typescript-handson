@@ -1,17 +1,22 @@
 "use strict";
+// inline annotation
+// let post: {
+//   title: string;
+//   content: string;
+//   date: Date;
+// } = {
+//   title: "this is a title",
+//   content: "this is a content",
+//   date: new Date(),
+// };
 Object.defineProperty(exports, "__esModule", { value: true });
-let person = {
-    name: "Nhan",
-    age: 99
+let post = {
+    title: "this is a title",
+    content: "this is a content",
+    date: new Date(),
 };
-let car = {
-    branch: "BMW",
-    color: "Black"
-};
-//not needed
-car = [];
-car = () => { };
-let newCar = {
-    brand: "BMW",
-    color: "Black"
+let post2 = {
+    title: "this is a title 2",
+    content: "this is a content 2",
+    date: new Date(),
 };
