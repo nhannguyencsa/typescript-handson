@@ -1,54 +1,14 @@
-// inline annotation
-// let post: {
-//   title: string;
-//   content: string;
-//   date: Date;
-// } = {
-//   title: "this is a title",
-//   content: "this is a content",
-//   date: new Date(),
-// };
-var post = {
-    title: "this is a title",
-    content: "this is a content",
-    date: new Date(),
-    author: {
-        name: "John",
-        age: 22,
-        email: "john@doe.com",
-        type: "human"
-    },
-    awards: {
-        web: {
-            name: "Web Awards",
-            date: new Date(),
-        },
-        web3: {
-            name: "Web 3",
-            date: new Date()
-        }
-    },
-    category: "javascript"
+var dog = {
+    name: "Buddy",
+    barks: true,
+    wags: true
 };
-var post2 = {
-    title: "this is a title",
-    content: "this is a content",
-    date: new Date(),
-    author: {
-        name: "John",
-        age: 22,
-        email: "john@doe.com",
-        type: "human"
-    },
-    awards: {
-        web: {
-            name: "Web Awards",
-            date: new Date(),
-        },
-        web3: {
-            name: "Web 3",
-            date: new Date()
-        }
-    }
+var cat = {
+    name: "Bella",
+    purrs: true,
 };
-console.log(post);
+var hybridAnimal = {
+    name: "Buddy",
+    barks: true,
+    purrs: true
+};
