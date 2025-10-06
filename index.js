@@ -1,14 +1,21 @@
-var dog = {
-    name: "Buddy",
-    barks: true,
-    wags: true
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+function logger(state) {
+    switch (state.state) {
+        case "loading":
+            return "Loading ...";
+        case "failed":
+            return "Error ".concat(state.code);
+        case "success":
+            return "Downloading ".concat(state.response.title);
+    }
+}
+var state = {
+    state: "success",
+    response: {
+        title: "title",
+        duration: 3,
+        summary: "summary"
+    }
 };
-var cat = {
-    name: "Bella",
-    purrs: true,
-};
-var hybridAnimal = {
-    name: "Buddy",
-    barks: true,
-    purrs: true
-};
+console.log(logger(state));
