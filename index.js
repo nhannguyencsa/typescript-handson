@@ -15,7 +15,30 @@ var post = {
     author: {
         name: "John",
         age: 22,
-        email: "john@doe.com"
+        email: "john@doe.com",
+        type: "human"
+    },
+    awards: {
+        web: {
+            name: "Web Awards",
+            date: new Date(),
+        },
+        web3: {
+            name: "Web 3",
+            date: new Date()
+        }
+    },
+    category: "javascript"
+};
+var post2 = {
+    title: "this is a title",
+    content: "this is a content",
+    date: new Date(),
+    author: {
+        name: "John",
+        age: 22,
+        email: "john@doe.com",
+        type: "human"
     },
     awards: {
         web: {
