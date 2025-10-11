@@ -1,15 +1,11 @@
-var Direction;
-(function (Direction) {
-    Direction[Direction["Up"] = 0] = "Up";
-    Direction[Direction["Down"] = 1] = "Down";
-    Direction[Direction["Left"] = 2] = "Left";
-    Direction[Direction["Right"] = 3] = "Right";
-})(Direction || (Direction = {}));
-var ODirection = {
-    Up: 0,
-    Down: 1,
-    Left: 2,
-    Right: 3
-}; //like enums
-var eDirection = 0 /* EDirection.Up */;
-var direction = Direction.Right;
+var AccessPermissions;
+(function (AccessPermissions) {
+    AccessPermissions[AccessPermissions["None"] = 0] = "None";
+    AccessPermissions[AccessPermissions["Read"] = 1] = "Read";
+    AccessPermissions[AccessPermissions["Write"] = 2] = "Write";
+    AccessPermissions[AccessPermissions["ReadWrite"] = 3] = "ReadWrite";
+    AccessPermissions[AccessPermissions["Delete"] = 4] = "Delete";
+    AccessPermissions[AccessPermissions["All"] = 7] = "All";
+})(AccessPermissions || (AccessPermissions = {}));
+console.log(AccessPermissions.ReadWrite);
+console.log(AccessPermissions.All);

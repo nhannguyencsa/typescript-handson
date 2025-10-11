@@ -9,4 +9,3 @@ enum AccessPermissions {
 
 console.log(AccessPermissions.ReadWrite);
 console.log(AccessPermissions.All);
-
